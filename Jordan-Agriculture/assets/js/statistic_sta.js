@@ -1,0 +1,1 @@
+const btn=document.getElementById("themeToggle");btn.addEventListener("click",()=>{const dark=document.body.classList.toggle("dark");btn.textContent=dark?"☀️ Light":"🌙 Dark";btn.setAttribute("aria-pressed",String(dark))});

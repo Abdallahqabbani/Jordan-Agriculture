@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Jordan Agriculture || Crops</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/crops.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Jordan Agriculture</div>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <button class="dark-toggle" id="darkToggle">🌙 Dark</button>
+      <a href="index.html" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+</svg></a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <h1>Crops in Jordan</h1>
+      <p>Explore Jordan's common and rare agricultural crops.</p>
+    </div>
+
+    <div class="category-buttons">
+      <button class="category-btn active" data-category="available">Available</button>
+      <button class="category-btn" data-category="rare">Rare</button>
+    </div>
+
+    <div class="card-carousel show" id="cardCarousel">
+      <button class="arrow" id="prevArrow">‹</button>
+      <div class="crop-card" id="cropCard"></div>
+      <button class="arrow" id="nextArrow">›</button>
+    </div>
+
+    <div class="card-counter" id="cardCounter"></div>
+  </main>
+
+  <footer>
+    &copy; 2025 Crops in Jordan | Sustainable Agriculture Research
+  </footer>
+
+  <script src="assets/js/crops.js"></script>
+</body>
+</html>

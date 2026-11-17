@@ -1,0 +1,190 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a; /* Darker font color */
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d9fdd3 25%, #bdf5b3 50%, #d9fdd3 75%);
+    background-size: 200% 200%;
+    animation: waveBackground 6s ease-in-out infinite;
+}
+
+@keyframes waveBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0; 
+    width: 100%;
+    padding: 30px 8%;
+    background: none;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px ;
+    height: 40px;
+    background: none;
+    border: hidden ;
+    text-decoration: none;
+}
+.social-media a i { 
+  font-size: 38px;
+  color:#222; 
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.05);
+  color: #222;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input::placeholder,
+.input-box input::placeholder {
+  color: rgba(0,0,0,0.6); 
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #333;
+  box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+
+.form-group textarea {
+  resize: none;
+  height: 120px;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    color: #222;
+    width: 500px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.25); 
+}
+
+.login-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #111;
+}
+
+.input-box {
+    margin: 20px 0;
+    position: relative;
+}
+.input-box input {
+    width: 100%;
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 12px 12px 12px 45px;
+    border-radius: 12px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 16px;
+    color: #111;
+    font-weight: 500;
+}
+.input-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #444;
+}
+
+.remember-forgot-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 15px;
+    color: #222;
+}
+
+.remember-forgot-box a {
+    color: #222;
+    text-decoration: none;
+}
+.remember-forgot-box a:hover {
+    text-decoration: underline;
+}
+
+.login-btn button {
+    width: 200px;
+    padding: 10px 0;
+    background: #111;
+    border: 2px solid #111;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-btn button:hover {
+    background: #333;
+    border-color: #333;
+}
+
+.register {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #222;
+}
+.register a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+  

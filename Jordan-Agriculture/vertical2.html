@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordan Agriculture || Vertical </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/vertical2.css">
+</head>
+
+<body>
+<nav>
+    <div class="logo">Jordan Agriculture</div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <button class="dark-toggle" id="darkToggle">🌙 Dark</button>
+      <a href="index.html" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+</svg></a>
+</div></nav>
+
+  <section class="section">
+
+    <div class="slide active">
+      <h2 class="title">Types of Vertical</h2>
+      <h3 class="subtitle">Farming</h3>
+
+      <div class="grid">
+        <div class="box">
+          <p><strong>Hydroponics</strong> is a soilless method of growing plants where roots are supplied directly with
+            a nutrient-rich water solution. Instead of soil, plants may be supported by inert mediums like perlite,
+            rockwool, coco coir, or clay pebbles. The main idea: plants don't need soil itself — they need the water,
+            oxygen, and nutrients that soil usually provides. Hydroponics delivers these in a controlled, highly
+            efficient way.</p>
+        </div>
+
+        <div class="img-card">
+          <img src="./images/hydroponics.jpg" alt="Hydroponic farm">
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top:30px;">
+        <div class="img-card">
+          <img src="./images/Container.jpg" alt="Container farm">
+        </div>
+        <div class="box">
+          <p><strong>Container farms</strong> are shipping containers (usually 20–40 feet long) that are converted into
+            fully controlled indoor farms. Inside, crops are grown vertically using hydroponics or aeroponics, with
+            integrated LED lighting, irrigation, climate control, and monitoring systems. They are essentially modular
+            "plug-and-play" vertical farms, making them portable and easy to deploy in almost any environment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <h2 class="title">Tower VS Aeroponics</h2>
+
+      <div class="grid">
+        <div>
+          <div class="img-card">
+            <img src="./images/Tower_systems.jpg" alt="Tower system">
+          </div>
+          <div class="box">
+            <p><strong>Tower systems</strong> are vertical columns where plants are grown in stacked rows around the
+              tower, usually using hydroponics or aeroponics. Instead of spreading crops horizontally across land,
+              plants grow upward in compact, cylindrical or rectangular structures. They're widely used in urban farms,
+              homes, schools, restaurants, and greenhouses.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="img-card">
+            <img src="./images/aeroponics.jpg" alt="Aeroponics system">
+          </div>
+          <div class="box">
+            <p><strong>Aeroponics</strong> is a soilless cultivation method where plant roots are suspended in the air
+              and misted with a nutrient-rich solution. Unlike hydroponics or soil farming, roots are exposed to air,
+              allowing maximum oxygen uptake. This method was developed by NASA for space missions as it uses very
+              little water and no soil.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <h2 class="title">Jordanian <span style="color:#755a3f;">Farmer</span></h2>
+
+      <div class="grid">
+        <div class="box">
+          <p><strong>Ayed Shkhhanbeh</strong>, a Jordanian farmer from Madaba and owner of Tala Farms, began helping his
+            father in farming at the age of 8. While rooted in traditional farming, he adopted modern techniques like
+            hydroponics through collaboration with the HAED-JO project, which helped him save 70% of water usage, reduce
+            costs, and increase productivity. Today, Tala Farms produces around half a million heads of lettuce
+            annually, supplies hotels and restaurants locally, and is planning to export, serving as a successful model
+            of sustainable agriculture that integrates business with community development.</p>
+        </div>
+
+        <div class="img-card">
+          <img src="./images/ayed_sha.jpg" alt="Jordanian Farmer" class="ayed">
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow-btn arrow-left" onclick="prevSlide()">⬅</div>
+    <div class="arrow-btn arrow-right" onclick="nextSlide()">➝</div>
+  </section>
+
+  <script src="assets/js/vertical2.js"></script>
+</body>
+
+</html>

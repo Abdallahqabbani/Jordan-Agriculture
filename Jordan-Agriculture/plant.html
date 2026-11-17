@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Jordan Agriculture || Plants </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/plant.css">
+</head>
+<body>
+   <nav>
+    <div class="logo">Jordan Agriculture</div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <button class="dark-toggle" id="darkToggle">🌙 Dark</button>
+      <a href="index.html" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+</svg></a>
+    </div>
+  </nav>
+  <h1>Plants in Jordan</h1>
+
+  <div class="buttons">
+    <button id="btn-available" class="active" onclick="showSection('available', this)">Available</button>
+    <button id="btn-rare" onclick="showSection('rare', this)">Rare</button>
+  </div>
+
+  <div id="available" class="section active">
+    <div class="plant">
+      <img src="./images/daffodil.jpg" alt="Daffodil">
+      <div class="info">
+        <h3>Daffodil</h3>
+        <p>Daffodils are beautiful flowering plants known for their bright yellow blossoms. They symbolize rebirth and are grown in Jordan for ornamental purposes.</p>
+      </div>
+    </div>
+    <div class="plant">
+      <img src="./images/jasimne.jpg" alt="Jasmine">
+      <div class="info">
+        <h3>Jasmine</h3>
+        <p>Jasmine is widely loved for its fragrance and is often found in Jordanian gardens. It is also used in perfumes and teas.</p>
+      </div>
+    </div>
+    <div class="plant">
+      <img src="./images/coleus.jpg" alt="Coleus">
+      <div class="info">
+        <h3>Coleus</h3>
+        <p>Coleus, also known as painted nettle, is a colorful ornamental plant that thrives in Jordan's climate and is popular in home gardens.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="rare" class="section">
+    <div class="plant">
+      <img src="./images/black-iris.jpg" alt="Black Iris">
+      <div class="info">
+        <h3>Black Iris</h3>
+        <p>The Black Iris is Jordan's national flower and a rare species that grows in limited areas. It represents resilience and beauty.</p>
+      </div>
+    </div>
+    <div class="plant">
+      <img src="./images/milk-thiste.jpg" alt="Milk Thistle">
+      <div class="info">
+        <h3>Milk Thistle</h3>
+        <p>A rare medicinal plant in Jordan, used traditionally for liver treatments and other herbal remedies.</p>
+      </div>
+    </div>
+    <div class="plant">
+      <img src="./images/ziziphus.jpg" alt="Desert Ziziphus">
+      <div class="info">
+        <h3>Desert Ziziphus</h3>
+        <p>Found in desert areas, this rare plant provides fruits and shade, with cultural and medicinal importance in Jordan.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/plant.js"></script>
+</body>
+</html>
